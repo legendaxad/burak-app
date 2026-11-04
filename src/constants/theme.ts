@@ -9,18 +9,18 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: '#242321',
+    background: '#F8F8FC',
+    backgroundElement: '#FFFFFF',
+    backgroundSelected: '#F1E4D0',
+    textSecondary: '#77736D',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: '#FFFFFF',
+    background: '#191817',
+    backgroundElement: '#282624',
+    backgroundSelected: '#39332B',
+    textSecondary: '#BEB8AE',
   },
 } as const;
 
@@ -61,5 +61,20 @@ export const Spacing = {
   six: 64,
 } as const;
 
+export const Brand = {
+  ink: '#171615',
+  charcoal: '#343434',
+  gold: '#D7B77E',
+  goldDeep: '#B78C4D',
+  canvas: '#F8F8FC',
+  surface: '#FFFFFF',
+  text: '#292724',
+  muted: '#817D76',
+  line: '#E8E5DF',
+  green: '#3D7955',
+  red: '#A95142',
+  blue: '#407DAB',
+} as const;
+
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
-export const MaxContentWidth = 800;
+export const MaxContentWidth = 720;
